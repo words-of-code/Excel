@@ -6,7 +6,7 @@ Luckily we can get around that with a small formula.
 
 ## [EN] Year-Week (ISO 8601)
 
-``
+```Excel
 =LET(
 	date; A1;
 	type; 2; correction; 4;
@@ -14,11 +14,11 @@ Luckily we can get around that with a small formula.
 	isoWeek; TEXT(ISO.WEEKNUMBER(date);"-W00");
 	isoYear & isoWeek;
 )
-``
+```
 
 ## [NL] Jaar-Week (ISO 8601)
 
-``
+```Excel
 =LET(
 	datum; A1;
 	type; 2; correctie; 4;
@@ -26,4 +26,4 @@ Luckily we can get around that with a small formula.
 	isoWeek; TEKST(ISO.WEEKNUMMER(datum);"-W00");
 	isoJaar & isoWeek;
 )
-``
+```
