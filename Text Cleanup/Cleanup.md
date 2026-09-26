@@ -6,8 +6,23 @@ When copying text from another file (e.g. PDF) or from a website, then the chanc
 =TRIM(CLEAN(SUBSTITUTE(A1; CHAR(160); "")))
 ```
 
+**TIP**: store this formula as a LAMBDA-function within a named range, e.g. CLEANUP, so you can use everywhere with ease. This way you can use it as a function: `=CLEANUP(A1)`.
+Hit `CTRL + F3` to open the 'Manage names' window and click New. Name: CLEANUP. Points to:
 
+```excel
+=LAMBDA(
+	txt;
+	TRIM(CLEAN(SUBSTITUTE(txt; CHAR(160); "")))
+)
+```
 
+### What does the formula parts do?
+- TRIM: removes leading and trailing spaces, and reduces multiple spaces behind each other to a single space
+- CLEAN: removes invisible characters (0 - 31), think about:
+  - CHAR(9): tab
+  - CHAR(10): Line Feed (LF)
+  - CHAR(13): Carriage Return (CR)
+- SUBSTITUTE CHAR(160): replaces Non-Breaking Space (NBSP) with a regular space
 
 ## [NL] Tekst opschonen
 
@@ -32,4 +47,4 @@ Open met `CTRL + F3` het 'Namen beheren' venster en klik op Nieuw. Naam: OPSCHON
   - TEKEN(9) (tab)
   - TEKEN(10) (Line Feed / LF ofwel regeleinde)
   - TEKEN(13) (Carriage Return / CR ofwel harde return)
-- SUBSTITUEREN van TEKEN(160) (Non-Breaking Space / NBSP ofwel vast spatie) door niets
+- SUBSTITUEREN TEKEN(160) (Non-Breaking Space / NBSP ofwel vast spatie) door niets
