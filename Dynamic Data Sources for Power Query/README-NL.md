@@ -37,11 +37,12 @@ Maak voor ieder te importeren bestand een regel in de tweede tabel. Vul de kolom
 - **Databron**   Controleer hier de volledige bestandslocatie en geef de cel een benoemd bereik, bijvoorbeeld csv_projecten. Zet dezelfde naam in kolom A (Referentie) als geheugensteun.
 
 Voorbeeld van een databron:
-|---|---|
+|---------------|-------------|
 |Bestandslocatie|pad_dynamisch|
 |Subfolder|brondata|
 |Bestandsnaam basis|projecten|
 |Extensie|csv|
 |Met datum?|= WAAR|
+|---------------|-------------|
 resulteert bijvoorbeeld in:
 `https://organisatienaam.sharepoint.com/personal/_username_/Documents/Desktop/brondata/planning-20260926.csv`
