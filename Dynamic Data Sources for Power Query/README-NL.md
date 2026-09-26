@@ -50,12 +50,13 @@ Maak voor ieder te importeren bestand een regel in de tweede tabel. Vul de kolom
 
 Voorbeeld van een databron:
 
-|:-----------------|:-----------------|
-|Bestandslocatie|pad_dynamisch|
-|Subfolder|brondata|
-|Bestandsnaam basis|projecten|
-|Extensie|csv|
-|Met datum?|= WAAR|
+| | |
+|---|---|
+| Bestandslocatie | pad_dynamisch |
+| Subfolder | brondata |
+| Bestandsnaam basis | projecten |
+| Extensie | csv |
+| Met datum? | = WAAR |
 
 resulteert bijvoorbeeld in:
 `https://organisatienaam.sharepoint.com/personal/_username_/Documents/Desktop/brondata/planning-20260926.csv`
