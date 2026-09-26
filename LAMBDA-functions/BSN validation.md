@@ -27,24 +27,25 @@ Verder verwijderd de formule ook `BSN` en `BSN:` (eventueel gevolgd door een spa
 Mocht je binnen een bestand veel gebruik van deze formule maken, overweeg dan om hem als LAMBDA functie te gebruiken.
 
 Ga daarvoor via **CTRL + F3** naar **Namen beheren** en klik op **Nieuw**. Gebruik verder:
-- Naam: BSN.CHECK
+- Naam: isBSN
 - Bereik: Werkmap
 - Verwijst naar:
   ```excel
-  =LAMBDA(bsn; LET(
-    bsn; REGEXVERVANGEN(
-      REGEXEXTRAHEREN(A1;"(?<![0-9])(?:BSN)?[0-9]{8,9}(?![0-9])");
-      "^BSN";
-      ""
-    );
-    n; TEKST(bsn; "000000000");
-    REST(
-      9*WAARDE(DEEL(n;1;1)) + 8*WAARDE(DEEL(n;2;1)) + 7*WAARDE(DEEL(n;3;1))+ 6*WAARDE(DEEL(n;4;1)) +
-      5*WAARDE(DEEL(n;5;1)) + 4*WAARDE(DEEL(n;6;1)) + 3*WAARDE(DEEL(n;7;1)) + 2*WAARDE(DEEL(n;8;1)) - 
-      WAARDE(DEEL(n;9;1));
-      11
-    )=0
-  ))
+  =LAMBDA(tekst;
+  LET(
+      bsn;REGEXVERVANGEN(
+          REGEXEXTRAHEREN(tekst;"(?<![0-9])(?:BSN)?[0-9]{8,9}(?![0-9])");
+          "^BSN";
+          ""
+      );
+      n;TEKST(bsn;"000000000");
+      REST(
+          9*WAARDE(DEEL(n;1;1)) + 8*WAARDE(DEEL(n;2;1)) + 7*WAARDE(DEEL(n;3;1)) +
+          6*WAARDE(DEEL(n;4;1)) + 5*WAARDE(DEEL(n;5;1)) + 4*WAARDE(DEEL(n;6;1)) +
+          3*WAARDE(DEEL(n;7;1)) + 2*WAARDE(DEEL(n;8;1)) - WAARDE(DEEL(n;9;1));
+          11
+      )=0
+  ) )
   ```
 
 ---
