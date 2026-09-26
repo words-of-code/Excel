@@ -62,12 +62,45 @@ resulteert bijv. in: `https://organisatienaam.sharepoint.com/personal/_username_
 
 De URL hierboven is alleen een voorbeeld. De waarde in jouw `kolom J (Databron)` moet verwijzen naar het bestand dat je daadwerkelijk kunt openen.
 
+## Stap 3: De databron gebruiken in Power Query
 
+Je kunt eerst via **Gegevens → Gegevens ophalen → Uit bestand** een query laten aanmaken, **of via Gegevens → Gegevens ophalen → Uit andere bronnen → Lege query** beginnen.
+Open daarna in de Power Query-editor **Start → Geavanceerde editor**. Daar zie en wijzig je de volledige M-code op één plek.
 
+De twee bronstappen
+Neem het pad uit het benoemde bereik[^1] en geef het aan de `LoadCSV` functie door. Binnen een let-blok schrijf je de regels zonder `=` aan het begin van de regel:
 
+```PowerQueryM
+  Bronbestand = Text.From(Excel.CurrentWorkbook(){[Name="csv_projecten"]}[Content]{0}[Column1]),
+  Bron = LoadCSV(Bronbestand, ",")
+```
 
+•	Bronbestand
+Leest de tekstwaarde uit de eerste cel van het benoemde bereik csv_projecten in het huidige werkboek.
+•	Bron
+Laat LoadCSV het bestand openen. Het tweede argument is het scheidingsteken voor het betreffende CSV bestand: gebruik "," voor een komma of ";" voor een puntkomma.
+Heb je het bestand eerst via de interface geopend? Voeg Bronbestand boven de bestaande bronstap toe en vervang die bronstap door Bron = LoadCSV(Bronbestand, ","). Laat de overige transformaties staan en controleer daarna het voorbeeld; pas vervolgstappen aan als de structuur van de geladen gegevens daarom vraagt.
+Bij een lege query kun je direct dit complete voorbeeld in de Geavanceerde editor plakken:
 
+```PowerQueryM
+let
+   Bronbestand = Text.From(Excel.CurrentWorkbook(){[Name="csv_projecten"]}[Content]{0}[Column1]),
+   Bron = LoadCSV(Bronbestand, ",")
+in
+   Bron
+```
 
+Vervang csv_projecten door de naam van jouw benoemde bereik en kies het scheidingsteken van jouw CSV. 
+Voor Excel bestanden dien je de LoadXLS-functie te gebruiken en de naam van het werkblad aan te geven.
+
+```PowerQueryM
+let
+   Bronbestand = Text.From(Excel.CurrentWorkbook(){[Name="xlsx_projecten"]}[Content]{0}[Column1]),
+   Bron = LoadXLS(Bronbestand),
+   #"Werkbladnaam" = Bron{[Item="NaamWerkblad",Kind="Sheet"]}[Data]
+in
+     #"Werkbladnaam"
+```
 
 
 
