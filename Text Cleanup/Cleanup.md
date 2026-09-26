@@ -44,6 +44,12 @@ Open met `CTRL + F3` het 'Namen beheren' venster en klik op Nieuw. Naam: OPSCHON
 ### Wat doen de verschillende delen van de formule?
 - SPATIES.WISSEN: spaties aan weerzijden verwijderen
 - WISSEN.CONTROL: verwijder onzichtbare tekens (0 - 31), denk hierbij aan tekens als:
+
+---
+
+If you enjoy what I do, please consider supporting me. Especially when it solved an issue for you or just saved you time. Thank you!
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H0E727PHE6)
   - TEKEN(9) (tab)
   - TEKEN(10) (Line Feed / LF ofwel regeleinde)
   - TEKEN(13) (Carriage Return / CR ofwel harde return)
