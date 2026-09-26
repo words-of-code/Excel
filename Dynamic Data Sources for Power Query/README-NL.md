@@ -104,6 +104,6 @@ in
 
 
 
-
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H0E727PHE6)
 
 [^1]: Een benoemd bereik maken: Selecteer de cel die benoemd moet worden. Typ de gewenste naam, bijvoorbeeld csv_planning, in het naamvak links van de formulebalk (waar normaal het celadres staat) en druk op Enter. Je kunt dit ook doen via: Ctrl+F3 → Namen beheren → Nieuw.
