@@ -32,6 +32,16 @@ Maak voor ieder te importeren bestand een regel in de tweede tabel. Vul de kolom
   - In het datumpatroon zijn de volgende karakters toegestaan: `d`, `m`, `y`, `j`, `e`, `-`, en ` ` (spatie).
   - Het karakter `e` is de weergavetaal onafhankelijke variant voor jaar (bijv. `jjjj` of `yyyy`).
 - **Datum overschrijven met…**   Vul hier een vaste datum of een ander nummer in wanneer je niet de actuele datum wilt gebruiken. Zet dan ook Met datum? aan.
-- **REGEX zoekpatroon**\  (optioneel) Geef het patroon op van het deel van de opgebouwde bestandsnaam dat je wilt aanpassen.
+- **REGEX zoekpatroon**   (optioneel) Geef het patroon op van het deel van de opgebouwde bestandsnaam dat je wilt aanpassen.
 - **REGEX vervangen met**   (optioneel) Geef de vervangende tekst op. Leeg laten verwijdert het gevonden deel.
 - **Databron**   Controleer hier de volledige bestandslocatie en geef de cel een benoemd bereik, bijvoorbeeld csv_projecten. Zet dezelfde naam in kolom A (Referentie) als geheugensteun.
+
+Voorbeeld van een databron:
+|---|---|
+|Bestandslocatie|pad_dynamisch|
+|Subfolder|brondata|
+|Bestandsnaam basis|projecten|
+|Extensie|csv|
+|Met datum?|= WAAR|
+resulteert bijvoorbeeld in:
+`https://organisatienaam.sharepoint.com/personal/_username_/Documents/Desktop/brondata/planning-20260926.csv`
