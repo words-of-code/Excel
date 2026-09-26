@@ -50,8 +50,15 @@ Maak voor ieder te importeren bestand een regel in de tweede tabel. Vul de kolom
 
 Voorbeeld van een databron:
 
-| | |
 |---|---|
+| Bestandslocatie | pad_dynamisch |
+| Subfolder | brondata |
+| Bestandsnaam basis | projecten |
+| Extensie | csv |
+| Met datum? | = WAAR |
+
+| Instelling | Waarde |
+|:-----------|:-------|
 | Bestandslocatie | pad_dynamisch |
 | Subfolder | brondata |
 | Bestandsnaam basis | projecten |
