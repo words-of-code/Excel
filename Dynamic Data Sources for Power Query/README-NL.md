@@ -23,9 +23,12 @@ Deze naam gebruik je ook voor het benoemde bereik* in de `kolom B (Bestandslocat
 
 Maak voor ieder te importeren bestand een regel in de tweede tabel. Vul de kolommen met blauwe koppen in; kolom J (Databron) bouwt het volledige pad met de bestandsnaam op via de =DATA.SOURCE() formule. Het resultaat is meteen een controle op je instellingen.
 
-- **Referentie**   Geef de databron een herkenbare naam, bijvoorbeeld csv_projecten. Deze naam gebruik je ook voor het benoemde bereik* in de kolom J (Databron).
-- **Bestandslocatie**   Selecteer een pad_ naam. Door de koppeling met de eerste tabel hoeft een wijziging van een locatie maar op 1 plek te worden gedaan.
-- **Subfolder**   Vul zo nodig de submap in, bijvoorbeeld brondata. Staat het bestand direct in de gekozen map, laat dit veld dan leeg.
+- **Referentie**
+  Geef de databron een herkenbare naam, bijvoorbeeld csv_projecten. Deze naam gebruik je ook voor het benoemde bereik* in de kolom J (Databron).
+- **Bestandslocatie**
+  Selecteer een pad_ naam. Door de koppeling met de eerste tabel hoeft een wijziging van een locatie maar op 1 plek te worden gedaan.
+- **Subfolder**
+  Vul zo nodig de submap in, bijvoorbeeld brondata. Staat het bestand direct in de gekozen map, laat dit veld dan leeg.
 - **Bestandsnaam (basis)** Vul het vaste deel van de naam in. Voor projecten-20260926.csv is dit projecten; datum en extensie komen uit de andere kolommen.
 - **Bestandsextensie**   Vul de extensie zonder punt in, bijvoorbeeld csv of xslx. LoadCSV ondersteunt momenteel alleen deze twee typen.
 - **Met datum?**   Vul WAAR of 1 in om de standaard datumtoevoeging te gebruiken. In de template is het standaardpatroon emmdd (jaar maand dag), zoals in projecten-20260926.csv. Je kunt hier ook een alternatief datumpatroon invullen. Controleer de uitkomst in Databron, zeker bij verschillen in Excel-taalinstelling.
