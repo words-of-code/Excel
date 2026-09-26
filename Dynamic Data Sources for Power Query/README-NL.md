@@ -23,8 +23,8 @@ Deze naam gebruik je ook voor het benoemde bereik* in de `kolom B (Bestandslocat
 
 Maak voor ieder te importeren bestand een regel in de tweede tabel. Vul de kolommen met blauwe koppen in; kolom J (Databron) bouwt het volledige pad met de bestandsnaam op via de =DATA.SOURCE() formule. Het resultaat is meteen een controle op je instellingen.
 
-- **Referentie**
-  Geef de databron een herkenbare naam, bijvoorbeeld csv_projecten. Deze naam gebruik je ook voor het benoemde bereik* in de kolom J (Databron).
+- **Referentie**\
+Geef de databron een herkenbare naam, bijvoorbeeld csv_projecten. Deze naam gebruik je ook voor het benoemde bereik* in de kolom J (Databron).
 - **Bestandslocatie**
   Selecteer een pad_ naam. Door de koppeling met de eerste tabel hoeft een wijziging van een locatie maar op 1 plek te worden gedaan.
 - **Subfolder**
