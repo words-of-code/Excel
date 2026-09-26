@@ -1,7 +1,3 @@
-# Intro
-
-
-
 ## Year-Quarter [EN]
 
 ```excel
