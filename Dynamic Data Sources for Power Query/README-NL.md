@@ -16,7 +16,7 @@ In de eerste tabel staan de basislocaties van je gegevensbestanden. Elke locatie
 Een extra bestandslocatie toevoegen:
 1.	Gebruik een lege regel in de tabel of voeg een extra rij toe aan de tabel.
 2.	Geef de locatie in `kolom A (Referentie)` een unieke naam, bijvoorbeeld `pad_projecten`.
-Deze naam gebruik je ook voor het [benoemde bereik][^1] in de `kolom B (Bestandslocatie)`.
+Deze naam gebruik je ook voor het benoemde bereik[^1] in de `kolom B (Bestandslocatie)`.
 3.	Vul in `kolom B (Bestandslocatie)` het pad naar de map in.
 
 *Controleer dat het pad naar een bestaande map verwijst en dat de scheiding tussen de map en de bestandsnaam in de uiteindelijke databron klopt.*
@@ -26,7 +26,7 @@ Deze naam gebruik je ook voor het [benoemde bereik][^1] in de `kolom B (Bestands
 Maak voor ieder te importeren bestand een regel in de tweede tabel. Vul de kolommen met blauwe koppen in; kolom J (Databron) bouwt het volledige pad met de bestandsnaam op via de =DATA.SOURCE() formule. Het resultaat is meteen een controle op je instellingen.
 
 - **Referentie**\
-  Geef de databron een herkenbare naam, bijvoorbeeld csv_projecten. Deze naam gebruik je ook voor het [benoemde bereik][^1] in de kolom J (Databron).
+  Geef de databron een herkenbare naam, bijvoorbeeld csv_projecten. Deze naam gebruik je ook voor het benoemde bereik[^1] in de kolom J (Databron).
 - **Bestandslocatie**\
   Selecteer een pad_ naam. Door de koppeling met de eerste tabel hoeft een wijziging van een locatie maar op 1 plek te worden gedaan.
 - **Subfolder**\
