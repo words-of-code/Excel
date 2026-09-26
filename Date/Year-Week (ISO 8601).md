@@ -1,5 +1,3 @@
-# Intro
-
 Excel ships with ISO.WEEKNUMBER() which is great for getting the ISO 8601 based weeknumber BUT it lacks an ISO.YEAR() function.
 
 Luckily we can get around that with a small formula.
