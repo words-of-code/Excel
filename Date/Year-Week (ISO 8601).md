@@ -10,7 +10,7 @@ Luckily we can get around that with a small formula.
 =LET(
 	date; A1;
 	type; 2; correction; 4;
-	isoYear; YEAR(date - WEEKDAG(date; type) + correction);
+	isoYear; YEAR(date - WEEKDAY(date; type) + correction);
 	isoWeek; TEXT(ISO.WEEKNUMBER(date);"-W00");
 	isoYear & isoWeek;
 )
