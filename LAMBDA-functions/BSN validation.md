@@ -29,7 +29,7 @@ Mocht je binnen een bestand veel gebruik van deze formule maken, overweeg dan om
 Ga daarvoor via **CTRL + F3** naar **Namen beheren** en klik op **Nieuw**. Gebruik verder:
 - Naam: BSN.CHECK
 - Bereik: Werkmap
-- Verwijst naar:\
+- Verwijst naar:
   ```excel
   =LAMBDA(bsn; LET(
     bsn; REGEXVERVANGEN(
