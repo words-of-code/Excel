@@ -50,7 +50,7 @@ Press **CTRL + F3** to open the **Name Manager**, select **New**, and enter:
 )
 ```
 
-You can then use the function anywhere in your workbook:
+You can then use the function anywhere in the workbook:
 
 ```excel
 =IS.BSN(A1)
@@ -109,7 +109,7 @@ Druk op **CTRL + F3** om **Namen beheren** te openen, kies **Nieuw** en vul het 
 )
 ```
 
-Daarna kun je de functie overal in je werkmap gebruiken:
+Daarna kun je de functie overal in de werkmap gebruiken:
 
 ```excel
 =IS.BSN(A1)
