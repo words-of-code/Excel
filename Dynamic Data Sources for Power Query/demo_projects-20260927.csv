@@ -1,0 +1,51 @@
+﻿Project_ID;Projectnaam;Categorie;Afdeling;Projectleider;Opdrachtgever;Prioriteit;Status;Startdatum;Einddatum_gepland;Einddatum_werkelijk;Voortgang_pct;Budget_EUR;Kosten_EUR;Risico;Regio
+PRJ-001;Klantenportaal vernieuwen;Digitalisering;IT;Noor;Directie;Laag;Niet gestart;2025-01-01;2025-03-02;;0;10000;0;Laag;Landelijk
+PRJ-002;Voorraadproces verbeteren;Training;Operations;Daan;Commercie;Kritiek;Geannuleerd;2025-04-08;2025-07-14;;0;97000;8730;Hoog;Oost
+PRJ-003;Nieuwe huisstijl;Implementatie;Marketing;Eva;Productteam;Hoog;In uitvoering;2025-07-15;2025-11-26;;41;96000;37786;Middel;Noord
+PRJ-004;CRM-migratie;Onderzoek;Sales;Milan;Klantenservice;Normaal;In uitvoering;2025-10-22;2026-04-11;;54;95000;52839;Laag;West
+PRJ-005;Dashboard verkoop;Marketing;HR;Lotte;Management;Laag;In uitvoering;2025-01-04;2025-07-31;;67;94000;69278;Hoog;Zuid
+PRJ-006;Mobiele app pilot;Procesverbetering;Finance;Thomas;Directie;Kritiek;On hold;2025-04-11;2025-12-12;;55;93000;41943;Middel;Landelijk
+PRJ-007;Website toegankelijkheid;Digitalisering;IT;Sanne;Commercie;Hoog;In uitvoering;2025-07-18;2026-04-26;;17;92000;13920;Laag;Oost
+PRJ-008;Documentbeheer;Training;Operations;Olivier;Productteam;Normaal;Niet gestart;2025-10-25;2026-09-09;;0;91000;0;Hoog;Noord
+PRJ-009;Facturatie automatiseren;Implementatie;Marketing;Noor;Klantenservice;Laag;Geannuleerd;2025-01-07;2025-03-14;;0;90000;4500;Middel;West
+PRJ-010;Leveranciersportaal;Onderzoek;Sales;Daan;Management;Kritiek;In uitvoering;2025-04-14;2025-07-26;;56;89000;54824;Middel;Zuid
+PRJ-011;Onboarding medewerkers;Marketing;HR;Eva;Directie;Hoog;In uitvoering;2025-07-21;2025-12-08;;69;88000;49790;Laag;Landelijk
+PRJ-012;Datakwaliteit verbeteren;Procesverbetering;Finance;Milan;Commercie;Normaal;In uitvoering;2025-10-03;2026-03-29;;82;87000;63493;Hoog;Oost
+PRJ-013;Evenementenagenda;Digitalisering;IT;Lotte;Productteam;Laag;On hold;2025-01-10;2025-08-12;;63;86000;52013;Middel;Noord
+PRJ-014;E-mailcampagne najaar;Training;Operations;Thomas;Klantenservice;Kritiek;In uitvoering;2025-04-17;2025-12-24;;32;85000;28016;Laag;West
+PRJ-015;Archief digitaliseren;Implementatie;Marketing;Sanne;Management;Hoog;Niet gestart;2025-07-24;2026-05-08;;0;84000;0;Hoog;Zuid
+PRJ-016;API-koppeling partners;Onderzoek;Sales;Olivier;Directie;Normaal;Geannuleerd;2025-10-06;2026-08-27;;0;83000;14110;Middel;Landelijk
+PRJ-017;Klanttevredenheidsonderzoek;Marketing;HR;Noor;Commercie;Laag;In uitvoering;2025-01-13;2025-03-26;;71;82000;51816;Laag;Oost
+PRJ-018;Rapportage duurzaamheid;Procesverbetering;Finance;Daan;Productteam;Kritiek;In uitvoering;2025-04-20;2025-08-07;;84;81000;65318;Hoog;Noord
+PRJ-019;Planning buitendienst;Digitalisering;IT;Eva;Klantenservice;Hoog;In uitvoering;2025-07-02;2025-11-25;;21;80000;17304;Hoog;West
+PRJ-020;Productcatalogus;Training;Operations;Milan;Management;Normaal;On hold;2025-10-09;2026-04-10;;16;79000;13904;Middel;Zuid
+PRJ-021;Intranet vernieuwen;Implementatie;Marketing;Lotte;Directie;Laag;In uitvoering;2025-01-16;2025-08-24;;47;78000;30061;Laag;Landelijk
+PRJ-022;Selfservice retouren;Onderzoek;Sales;Thomas;Commercie;Kritiek;Niet gestart;2025-04-23;2026-01-05;;0;77000;0;Hoog;Oost
+PRJ-023;Betaalproces optimaliseren;Marketing;HR;Sanne;Productteam;Hoog;Geannuleerd;2025-07-05;2026-04-25;;0;76000;9880;Middel;Noord
+PRJ-024;Training Power Query;Procesverbetering;Finance;Olivier;Klantenservice;Normaal;In uitvoering;2025-10-12;2026-09-08;;86;75000;66435;Laag;West
+PRJ-025;Beveiligingsaudit;Digitalisering;IT;Noor;Management;Laag;In uitvoering;2025-01-19;2025-04-07;;23;74000;18722;Hoog;Zuid
+PRJ-026;Contractenregister;Training;Operations;Daan;Directie;Kritiek;In uitvoering;2025-04-01;2025-07-25;;36;73000;21550;Middel;Landelijk
+PRJ-027;Locatieonderzoek;Implementatie;Marketing;Eva;Commercie;Hoog;On hold;2025-07-08;2025-12-07;;24;72000;15379;Laag;Oost
+PRJ-028;Socialmediacampagne;Onderzoek;Sales;Milan;Productteam;Normaal;In uitvoering;2025-10-15;2026-04-22;;62;71000;42259;Laag;Noord
+PRJ-029;Helpdesk kennisbank;Marketing;HR;Lotte;Klantenservice;Laag;Niet gestart;2025-01-22;2025-09-05;;0;70000;0;Hoog;West
+PRJ-030;Datamigratie fase 2;Procesverbetering;Finance;Thomas;Management;Kritiek;Geannuleerd;2025-04-04;2025-12-23;;0;69000;6210;Middel;Zuid
+PRJ-031;Abonnementenbeheer;Digitalisering;IT;Sanne;Directie;Hoog;In uitvoering;2025-07-11;2026-05-07;;25;68000;13940;Laag;Landelijk
+PRJ-032;Projectadministratie;Training;Operations;Olivier;Commercie;Normaal;In uitvoering;2025-10-18;2026-09-20;;38;67000;22659;Hoog;Oost
+PRJ-033;Verzendproces;Implementatie;Marketing;Noor;Productteam;Laag;In uitvoering;2026-01-25;2026-04-19;;51;66000;32314;Middel;Noord
+PRJ-034;Feedbackformulier;Onderzoek;Sales;Daan;Klantenservice;Kritiek;On hold;2026-04-07;2026-08-06;;32;65000;21424;Laag;West
+PRJ-035;Toegangsbeheer;Marketing;HR;Eva;Management;Hoog;In uitvoering;2026-07-14;2026-12-19;;77;64000;54208;Hoog;Zuid
+PRJ-036;Nieuwe productlijn;Procesverbetering;Finance;Milan;Directie;Normaal;Niet gestart;2026-10-21;2027-05-04;;0;63000;0;Middel;Landelijk
+PRJ-037;Proceshandboek;Digitalisering;IT;Lotte;Commercie;Laag;Geannuleerd;2026-01-03;2026-08-23;;0;62000;3100;Middel;Oost
+PRJ-038;Reserveringssysteem;Training;Operations;Thomas;Productteam;Kritiek;In uitvoering;2026-04-10;2027-01-04;;40;61000;23424;Laag;Noord
+PRJ-039;Financieel dashboard;Implementatie;Marketing;Sanne;Klantenservice;Hoog;In uitvoering;2026-07-17;2027-05-19;;53;60000;32754;Hoog;West
+PRJ-040;Lokale campagne;Onderzoek;Sales;Olivier;Management;Normaal;In uitvoering;2026-10-24;2027-10-02;;66;59000;42834;Middel;Zuid
+PRJ-041;Serviceafspraken;Marketing;HR;Noor;Directie;Laag;On hold;2026-01-06;2026-04-06;;40;58000;19024;Laag;Landelijk
+PRJ-042;Kwaliteitscontroles;Procesverbetering;Finance;Daan;Commercie;Kritiek;In uitvoering;2026-04-13;2026-08-18;;16;57000;8117;Hoog;Oost
+PRJ-043;Partnertraining;Digitalisering;IT;Eva;Productteam;Hoog;Niet gestart;2026-07-20;2026-12-31;;0;56000;0;Middel;Noord
+PRJ-044;Datawarehouse pilot;Training;Operations;Milan;Klantenservice;Normaal;Geannuleerd;2026-10-02;2027-04-21;;0;55000;9350;Laag;West
+PRJ-045;Nieuwsbriefsegmentatie;Implementatie;Marketing;Lotte;Management;Laag;In uitvoering;2026-01-09;2026-09-04;;55;54000;32670;Hoog;Zuid
+PRJ-046;Klantenservice chatbot;Onderzoek;Sales;Thomas;Directie;Kritiek;In uitvoering;2026-04-16;2027-01-16;;68;53000;29553;Hoog;Landelijk
+PRJ-047;Website zoekfunctie;Marketing;HR;Sanne;Commercie;Hoog;In uitvoering;2026-07-23;2027-05-31;;81;52000;37487;Middel;Oost
+PRJ-048;Voorraadprognose;Procesverbetering;Finance;Olivier;Productteam;Normaal;On hold;2026-10-05;2027-09-19;;48;51000;23501;Laag;Noord
+PRJ-049;Jaarcongres organisatie;Digitalisering;IT;Noor;Klantenservice;Laag;In uitvoering;2026-01-12;2026-04-18;;31;50000;15965;Hoog;West
+PRJ-050;Rapportage impact;Training;Operations;Daan;Management;Kritiek;Niet gestart;2026-04-19;2026-08-30;;0;49000;0;Middel;Zuid
