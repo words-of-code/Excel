@@ -1,11 +1,11 @@
-## Excel keyboard shortcuts (English as Office display language)
+## [EN] Excel keyboard shortcuts (English as Office display language)
 
 | Shortcut | Function / description |
 |---|---|
 | **CTRL + C** | copy |
 | **CTRL + X** | cut |
 | **CTRL + V** | paste |
-| **CTRL + ALT + V** | open Paste Special, with these common options:<br>.. — values<br>.. — formatting<br>.. — formulas<br>.. — transpose (swap rows and columns) |
+| **CTRL + ALT + V** | open Paste Special, with these common options:<br>V — values<br>.. — formatting<br>.. — formulas<br>.. — transpose (swap rows and columns) |
 | **CTRL + D** | fill down |
 | **CTRL + R** | fill right |
 | **CTRL + ENTER** | fill all selected cells with the value entered in the active cell |
@@ -28,7 +28,7 @@
 | **ALT + =** | insert `=SUM(…:…)` for the range above or next to the active cell |
 | **Fn + Esc/FnLock** | enable Fn Lock on your laptop keyboard so you can use the function keys directly |
 
-## Excel sneltoetsen (Nederlands als Office-weergavetaal)
+## [NL] Excel sneltoetsen (Nederlands als Office-weergavetaal)
 
 | Sneltoets | Functie / uitleg |
 |---|---|
