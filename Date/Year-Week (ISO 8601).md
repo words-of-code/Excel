@@ -13,7 +13,7 @@ To return the ISO year and week in the format `2026-W53`:
 	type; 2; correction; 4;
 	isoYear; YEAR(date - WEEKDAY(date; type) + correction);
 	isoWeek; TEXT(ISO.WEEKNUMBER(date);"-W00");
-	isoYear & isoWeek;
+	isoYear & isoWeek
 )
 ```
 
@@ -31,7 +31,7 @@ Press **CTRL + F3** to open the **Name Manager**, select **New**, and enter:
 		type; 2; correction; 4;
 		isoYear; YEAR(date - WEEKDAY(date; type) + correction);
 		isoWeek; TEXT(ISO.WEEKNUMBER(date);"-W00");
-		isoYear & isoWeek;
+		isoYear & isoWeek
 	)
 )
 ```
@@ -57,7 +57,7 @@ Om het ISO-jaar en weeknummer te retourneren in het formaat `2026-W53`:
 	type; 2; correctie; 4;
 	isoJaar; JAAR(datum - WEEKDAG(datum; type) + correctie);
 	isoWeek; TEKST(ISO.WEEKNUMMER(datum);"-W00");
-	isoJaar & isoWeek;
+	isoJaar & isoWeek
 )
 ```
 
@@ -75,7 +75,7 @@ Druk op **CTRL + F3** om **Namen beheren** te openen, kies **Nieuw** en voer het
 		type; 2; correctie; 4;
 		isoJaar; JAAR(datum - WEEKDAG(datum; type) + correctie);
 		isoWeek; TEKST(ISO.WEEKNUMMER(datum);"-W00");
-		isoJaar & isoWeek;
+		isoJaar & isoWeek
 	)
 )
 ```
