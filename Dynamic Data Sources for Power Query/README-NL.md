@@ -1,5 +1,5 @@
 # Dynamische databronnen in Excel / Power Query
-<sub>versie 1</sub>
+<sub>versie 1.1</sub>
 
 Met het configuratiewerkblad bepaal je welke bestanden je wilt importeren via Power Query, zonder een vaste bestandslocatie in elke query op te nemen. Je legt eerst de basislocatie vast, stelt daarna per bestand de naam samen en gebruikt tot slot het benoemde bereik[^1] waarmee de informatie in Power Query opgehaald kan worden.
 
@@ -148,6 +148,7 @@ in
 
 ## Tot slot
 
-Met de template heb je een gemakkelijke manier om CSV en XLS, XLSX, XSLM bestanden in te laden zonder dat je pad en bestandsnaam hardcoded in de query staan. Ondersteuning voor JSON zal de eerste uitbreiding worden. Ga in de tussentijd ook vooral zelf aan de slag om het in andere queries toe te passen.
+Met de template heb je een gemakkelijke manier om CSV, JSON en XLSX (en XLS en XSLM) bestanden in te laden zonder dat je pad en bestandsnaam hardcoded in de query staan. Vooralsnog hou ik het bij deze 3 bestandsextensies. De eerste uitbreiding zal waarschijnlijk richting het ophalen van data uit een database (bijv. MariaDB of MySQL) zijn, zodra ik daar zelf gebruik van ga maken. 
+Ga in de tussentijd ook vooral zelf aan de slag om het in andere queries toe te passen. En als je een goede oplossing hebt, deel die dan ook vooral met mij.
 
 <!-- [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H0E727PHE6) -->
