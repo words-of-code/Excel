@@ -103,10 +103,10 @@ Bij een lege query kun je direct dit complete voorbeeld in de Geavanceerde edito
 
 ```PowerQueryM
 let
-   Bronbestand = Text.From(Excel.CurrentWorkbook(){[Name="csv_projecten"]}[Content]{0}[Column1]),
-   Bron = LoadCSV(Bronbestand, ",")
+  Bronbestand = Text.From(Excel.CurrentWorkbook(){[Name="csv_projecten"]}[Content]{0}[Column1]),
+  Bron = LoadCSV(Bronbestand, ",")
 in
-   Bron
+  #"Bron"
 ```
 
 Vervang *csv_projecten* door de naam van jouw benoemde bereik en kies het scheidingsteken dat binnen de CSV gebruikt wordt.
@@ -117,7 +117,7 @@ Voor JSON bestanden dien je **LoadJSON** te gebruiken. Bij een lege query kun je
 // Laden van JSON
 let
   Bronbestand = Text.From(Excel.CurrentWorkbook(){[Name="json_projecten"]}[Content]{0}[Column1]),
-  Bron = LoadJSON(Bronbestand),
+  Bron = LoadJSON(Bronbestand)
 in
   #"Bron"
 ```
