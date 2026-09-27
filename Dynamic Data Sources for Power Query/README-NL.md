@@ -64,7 +64,7 @@ Maak voor ieder te importeren bestand een regel in de tweede tabel. Vul de kolom
 | Extensie | csv |
 | Met datum? | = WAAR |
 
-resulteert bijv. in: `https://organisatienaam.sharepoint.com/personal/_username_/Documents/Desktop/brondata/planning-20260926.csv`
+resulteert bijv. in: `https://organisatienaam.sharepoint.com/personal/_username_/Documents/Desktop/brondata/projecten-20260926.csv`
 
 De URL hierboven is alleen een voorbeeld. De waarde in jouw `kolom J (Databron)` moet verwijzen naar het bestand dat je daadwerkelijk kunt openen.
 
