@@ -1,7 +1,7 @@
 ## [EN] Excel keyboard shortcuts (English as Office display language)
 
 | Shortcut | Function / description |
-|---|---|
+|:---|:---|
 | **CTRL + C** | copy |
 | **CTRL + X** | cut |
 | **CTRL + V** | paste |
@@ -31,7 +31,7 @@
 ## [NL] Excel sneltoetsen (Nederlands als Office-weergavetaal)
 
 | Sneltoets | Functie / uitleg |
-|---|---|
+|:---|:---|
 | **CTRL + C** | kopiëren |
 | **CTRL + X** | knippen |
 | **CTRL + V** | plakken |
