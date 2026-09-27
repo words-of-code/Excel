@@ -13,7 +13,7 @@ In de eerste tabel staan de basislocaties van je gegevensbestanden. Elke locatie
   *(Dit pad is alleen zichtbaar nadat het Excel bestand een eerste keer is opgeslagen.)*
 
 - **pad_downloads**\
-  Verwijst naar je persoonlijke Downloads-map. Vervang de **gebruikersnaam** in het pad door je eigen Windows-gebruikersnaam, bijv. `C:\Users\Words-of-Code\Downloads\`.
+  Verwijst naar je persoonlijke Downloads-map. Vervang de **\_gebruikersnaam\_** in het pad door je eigen Windows-gebruikersnaam, bijv. **C:\Users\Words-of-Code\Downloads\\**.
 
 Een extra bestandslocatie toevoegen:
 1.	Gebruik een lege regel in de tabel of, indien nodig, voeg een extra rij toe aan de tabel.
@@ -115,4 +115,4 @@ in
 
 
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H0E727PHE6)
+<!-- [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H0E727PHE6) -->
