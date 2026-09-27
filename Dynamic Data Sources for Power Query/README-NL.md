@@ -1,4 +1,5 @@
 # Dynamische databronnen in Excel / Power Query
+<sub>versie 1</sub>
 
 Met het configuratiewerkblad bepaal je welke bestanden je wilt importeren via Power Query, zonder een vaste bestandslocatie in elke query op te nemen. Je legt eerst de basislocatie vast, stelt daarna per bestand de naam samen en gebruikt tot slot het benoemde bereik[^1] waarmee de informatie in Power Query opgehaald kan worden.
 
@@ -31,7 +32,7 @@ Deze naam gebruik je ook voor het benoemde bereik in de **kolom B (Bestandslocat
 
 Maak voor ieder te importeren bestand een regel in de tweede tabel. Vul de kolommen met blauwe koppen in; **kolom J (Databron)** bouwt het volledige pad met de bestandsnaam op via de `=DATA.SOURCE()` formule. Het resultaat is meteen een controle op je instellingen.
 
-- **Referentie**\
+- **ID**\
   Geef de databron een herkenbare naam, bijv. *csv_projecten*. Deze naam gebruik je ook voor het benoemde bereik in de **kolom J (Databron)**.
   
 - **Bestandslocatie**\
@@ -44,15 +45,16 @@ Maak voor ieder te importeren bestand een regel in de tweede tabel. Vul de kolom
   Vul het vaste deel van de naam in. Voor *projecten-20260926.csv* is dit *projecten*; de datum (met het streepje ervoor) en de extensie komen uit de andere kolommen.
   
 - **Bestandsextensie**\
-  Vul de extensie zonder punt in, bijv. *csv* of *xslx*. De template ondersteunt momenteel alleen deze twee typen via LoadCSV en LoadXLS.
+  Vul de extensie zonder punt in, bijv. *csv* of *xslx*. De template ondersteunt momenteel alleen deze twee bestandsextensies via LoadCSV en LoadXLS.
   
 - **Met datum?**\
-  Vul WAAR of 1 in om de standaard datumtoevoeging te gebruiken. In de template is het standaardpatroon emmdd (jaar maand dag), zoals in `projecten-20260926.csv`. Je kunt hier ook een alternatief datumpatroon invullen. Controleer de uitkomst in Databron, zeker bij verschillen in Excel-taalinstelling.
+  Vul WAAR of 1 in om de standaard datumtoevoeging te gebruiken. In de template is het standaardpatroon `emmdd` (jaar maand dag), zoals in `projecten-20260926.csv`. Je kunt hier ook een alternatief datumpatroon invullen. Controleer de uitkomst in Databron, zeker bij verschillen in Excel-taalinstelling.
   - In het datumpatroon zijn de volgende karakters toegestaan: `d`, `m`, `y`, `j`, `e`, `-`, en ` ` (spatie).
   - Het karakter `e` is de weergavetaal onafhankelijke variant voor jaar (bijv. `jjjj` of `yyyy`).
+  - De voorloopnul bij dag en maand krijg je door respectievelijk `dd` en `mm` te gebruiken.
 
 - **Datum overschrijven met…**\
-  Vul hier een vaste datum of een ander nummer in wanneer je niet de actuele datum wilt gebruiken. Zet dan ook Met datum? aan.
+  Vul hier een vaste datum of een ander nummer in wanneer je niet de actuele datum wilt gebruiken. Zet dan ook *Met datum?* aan.
   
 - **REGEX zoekpatroon**\
   (optioneel) Geef het patroon op van het deel van de opgebouwde bestandsnaam dat je wilt aanpassen.
@@ -61,7 +63,7 @@ Maak voor ieder te importeren bestand een regel in de tweede tabel. Vul de kolom
   (optioneel) Geef de vervangende tekst op. Leeg laten verwijdert het gevonden deel.
   
 - **Databron**\
-  Controleer hier de volledige bestandslocatie en geef de cel een benoemd bereik, bijvoorbeeld csv_projecten. Zet dezelfde naam in kolom A (Referentie) als geheugensteun.
+  Controleer hier de volledige bestandslocatie en geef de cel een benoemd bereik, bijv. *csv_projecten*. Zet dezelfde naam in **kolom A (ID)** als geheugensteun.
 
 **Voorbeeld van een databron:**
 
@@ -75,26 +77,27 @@ Maak voor ieder te importeren bestand een regel in de tweede tabel. Vul de kolom
 
 resulteert bijv. in: `https://organisatienaam.sharepoint.com/personal/_username_/Documents/Desktop/brondata/projecten-20260926.csv`
 
-De URL hierboven is alleen een voorbeeld. De waarde in jouw `kolom J (Databron)` moet verwijzen naar het bestand dat je daadwerkelijk kunt openen.
+De URL hierboven is alleen een voorbeeld. De waarde in jouw **kolom J (Databron)** moet verwijzen naar het bestand dat je daadwerkelijk kunt openen.
 
 ## Stap 3: De databron gebruiken in Power Query
 
 Je kunt eerst via **Gegevens → Gegevens ophalen → Uit bestand** een query laten aanmaken, **of via Gegevens → Gegevens ophalen → Uit andere bronnen → Lege query** beginnen.
 Open daarna in de Power Query-editor **Start → Geavanceerde editor**. Daar zie en wijzig je de volledige M-code op één plek.
 
-De twee bronstappen
-Neem het pad uit het benoemde bereik[^1] en geef het aan de `LoadCSV` functie door. Binnen een let-blok schrijf je de regels zonder `=` aan het begin van de regel:
+De twee bronstappen:
+Haal het pad van het benoemde bereik op en geef het aan de **LoadCSV** functie door. Binnen een let-blok schrijf je de regels zonder `=` aan het begin van de regel:
 
 ```PowerQueryM
   Bronbestand = Text.From(Excel.CurrentWorkbook(){[Name="csv_projecten"]}[Content]{0}[Column1]),
   Bron = LoadCSV(Bronbestand, ",")
 ```
 
-•	Bronbestand
-Leest de tekstwaarde uit de eerste cel van het benoemde bereik csv_projecten in het huidige werkboek.
-•	Bron
-Laat LoadCSV het bestand openen. Het tweede argument is het scheidingsteken voor het betreffende CSV bestand: gebruik "," voor een komma of ";" voor een puntkomma.
-Heb je het bestand eerst via de interface geopend? Voeg Bronbestand boven de bestaande bronstap toe en vervang die bronstap door Bron = LoadCSV(Bronbestand, ","). Laat de overige transformaties staan en controleer daarna het voorbeeld; pas vervolgstappen aan als de structuur van de geladen gegevens daarom vraagt.
+-	**Bronbestand**\
+  Leest de tekstwaarde uit de eerste cel van het benoemde bereik csv_projecten in het huidige werkboek.
+-	**Bron**\
+  Laat LoadCSV het bestand openen. Het tweede argument is het scheidingsteken voor het betreffende CSV bestand. Gebruik `,` voor een komma en `;` voor een puntkomma.\
+  Heb je het bestand eerst via de interface geopend? Voeg Bronbestand boven de bestaande bronstap toe en vervang die bronstap door `Bron = LoadCSV(Bronbestand, ",")`. Laat de overige transformaties staan en controleer daarna het voorbeeld; pas vervolgstappen aan als de structuur van de geladen gegevens daarom vraagt.
+
 Bij een lege query kun je direct dit complete voorbeeld in de Geavanceerde editor plakken:
 
 ```PowerQueryM
@@ -105,18 +108,20 @@ in
    Bron
 ```
 
-Vervang csv_projecten door de naam van jouw benoemde bereik en kies het scheidingsteken van jouw CSV. 
-Voor Excel bestanden dien je de LoadXLS-functie te gebruiken en de naam van het werkblad aan te geven.
+Vervang *csv_projecten* door de naam van jouw benoemde bereik en kies het scheidingsteken dat binnen de CSV gebruikt wordt.
+Voor Excel bestanden dien je **LoadXLS** te gebruiken en de naam van het werkblad aan te geven. Bij een lege query kun je direct dit complete voorbeeld in de Geavanceerde editor plakken:
 
 ```PowerQueryM
 let
-   Bronbestand = Text.From(Excel.CurrentWorkbook(){[Name="xlsx_projecten"]}[Content]{0}[Column1]),
+   Bronbestand = Text.From(Excel.CurrentWorkbook(){[Name="xls_projecten"]}[Content]{0}[Column1]),
    Bron = LoadXLS(Bronbestand),
    #"Werkbladnaam" = Bron{[Item="NaamWerkblad",Kind="Sheet"]}[Data]
 in
      #"Werkbladnaam"
 ```
 
+## Tot slot
 
+Met de template heb je een gemakkelijke manier om CSV en XLS, XLSX, XSLM bestanden in te laden zonder dat je pad en bestandsnaam hardcoded in de query staan. Ondersteuning voor JSON zal de eerste uitbreiding worden. Ga in de tussentijd ook vooral zelf aan de slag om het in andere queries toe te passen.
 
 <!-- [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H0E727PHE6) -->
