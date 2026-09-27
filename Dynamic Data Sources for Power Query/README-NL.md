@@ -1,25 +1,31 @@
 # Dynamische databronnen in Excel / Power Query
 
-Met dit configuratiewerkblad bepaal je welke bestanden Power Query importeert, zonder een vaste bestandslocatie in elke query op te nemen. Je legt eerst de basislocatie vast, stelt daarna per bestand de naam samen en gebruikt tot slot het benoemde bereik waarmee de informatie in Power Query opgehaald kan worden.
+Met het configuratiewerkblad bepaal je welke bestanden je wilt importeren via Power Query, zonder een vaste bestandslocatie in elke query op te nemen. Je legt eerst de basislocatie vast, stelt daarna per bestand de naam samen en gebruikt tot slot het benoemde bereik[^1] waarmee de informatie in Power Query opgehaald kan worden.
 
-De Power Query functies `LoadCSV` en `LoadXLS` staan al in het Excel-template. De voorbeelden hieronder gebruiken een CSV-bestand en LoadCSV.
+De Power Query functies **LoadCSV** en **LoadXLS** staan al in het Excel-template. De voorbeelden hieronder gebruiken een CSV-bestand en LoadCSV.
 
 ## Stap 1: Bestandslocaties instellen
 
-In de eerste tabel staan de basislocaties van je gegevensbestanden. Elke locatie heeft een unieke naam die met **pad_** begint. Deze naam kan via de dropdown lijst in stap 2 gekozen worden.
+In de eerste tabel staan de basislocaties van je gegevensbestanden. Elke locatie heeft een unieke naam die met **pad_** begint. Deze naam kan via de dropdown lijst in stap 2 gekozen worden, zodoende hoef je en wijziging in een locatie slechts op 1 plek bij te werken.
+
 - **pad_dynamisch**\
   Verwijst naar de locatie van het geopende Excel-bestand. Als het werkboek met de bijbehorende bronbestanden wordt verplaatst, kan het pad daardoor mee veranderen.\
   Dit pad is alleen zichtbaar nadat het Excel bestand een eerste keer is opgeslagen.
+
 - **pad_downloads**\
-  Verwijst naar je persoonlijke Downloads-map. Vervang `_username_` in het pad door je eigen Windows-gebruikersnaam, bijv. `C:\Users\words-of-code\Downloads\`.
+  Verwijst naar je persoonlijke Downloads-map. Vervang **_username_** in het pad door je eigen Windows-gebruikersnaam, bijv. `C:\Users\Words-of-Code\Downloads\`.
 
 Een extra bestandslocatie toevoegen:
-1.	Gebruik een lege regel in de tabel of voeg een extra rij toe aan de tabel.
-2.	Geef de locatie in `kolom A (Referentie)` een unieke naam, bijvoorbeeld `pad_projecten`.
-Deze naam gebruik je ook voor het benoemde bereik[^1] in de `kolom B (Bestandslocatie)`.
-3.	Vul in `kolom B (Bestandslocatie)` het pad naar de map in.
+1.	Gebruik een lege regel in de tabel of, indien nodig, voeg een extra rij toe aan de tabel.
+2.	Geef de locatie in **kolom A (Referentie)** een unieke naam, bijvoorbeeld **pad_projecten**.
+Deze naam gebruik je ook voor het benoemde bereik[^1] in de **kolom B (Bestandslocatie)**.
+3.	Vul in **kolom B (Bestandslocatie)** het pad naar de map in.
 
 *Controleer dat het pad naar een bestaande map verwijst en dat de scheiding tussen de map en de bestandsnaam in de uiteindelijke databron klopt.*
+
+> [!NOTE]
+> Een benoemd bereik maken:
+> Selecteer de cel die benoemd moet worden. Typ de gewenste naam, bijvoorbeeld *csv_projecten*, in het naamvak links van de formulebalk (waar normaal het celadres staat) en druk op Enter. Je kunt dit ook doen via: **Ctrl+F3 → Namen beheren → Nieuw**.
 
 ## Stap 2: Databronnen definiëren
 
@@ -105,5 +111,3 @@ in
 
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H0E727PHE6)
-
-[^1]: Een benoemd bereik maken: Selecteer de cel die benoemd moet worden. Typ de gewenste naam, bijvoorbeeld csv_planning, in het naamvak links van de formulebalk (waar normaal het celadres staat) en druk op Enter. Je kunt dit ook doen via: Ctrl+F3 → Namen beheren → Nieuw.
