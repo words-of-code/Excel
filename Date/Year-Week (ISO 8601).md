@@ -42,10 +42,6 @@ You can then use the function anywhere in your workbook:
 =ISO.YEARWEEK(A1)
 ```
 
-
-
-
-````less
 ## [NL] Jaar-Week (ISO 8601)
 
 Excel heeft een ingebouwde functie om het ISO 8601-weeknummer te bepalen, maar heeft geen functie om het bijbehorende ISO 8601-jaar te retourneren. Hieronder staat een eenvoudige oplossing voor dit probleem.
@@ -89,7 +85,6 @@ Je kunt de functie vervolgens overal in je werkmap gebruiken:
 ```excel
 =ISO.JAARWEEK(A1)
 ```
-````
 
 ---
 
