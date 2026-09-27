@@ -3,7 +3,7 @@
 
 Met het configuratiewerkblad bepaal je welke bestanden je wilt importeren via Power Query, zonder een vaste bestandslocatie in elke query op te nemen. Je legt eerst de basislocatie vast, stelt daarna per bestand de naam samen en gebruikt tot slot het benoemde bereik[^1] waarmee de informatie in Power Query opgehaald kan worden.
 
-De Power Query functies **LoadCSV** en **LoadXLS** staan al in het Excel-template. De voorbeelden hieronder gebruiken een CSV-bestand en LoadCSV.
+De Power Query functies **LoadCSV**, **LoadJSON** en **LoadXLS** staan al in het Excel-template. De voorbeelden hieronder gebruiken een CSV-bestand en LoadCSV.
 
 ## Stap 1: Bestandslocaties instellen
 
@@ -46,7 +46,7 @@ Maak voor ieder te importeren bestand een regel in de tweede tabel. Vul de kolom
   Vul het vaste deel van de naam in. Voor *projecten-20260927.csv* is dit *projecten*; de datum (met het streepje ervoor) en de extensie komen uit de andere kolommen.
   
 - **Bestandsextensie**\
-  Vul de extensie zonder punt in, bijv. *csv* of *xslx*. De template ondersteunt momenteel alleen deze twee bestandsextensies via LoadCSV en LoadXLS.
+  Vul de extensie zonder punt in, bijv. *csv*, *json* of *xslx*. De template ondersteunt momenteel alleen deze drie bestandsextensies via LoadCSV, LoadJSON en LoadXLS.
   
 - **Met datum?**\
   Vul WAAR of 1 in om de standaard datumtoevoeging te gebruiken. In de template is het standaardpatroon `emmdd` (jaar maand dag), zoals in `projecten-20260927.csv`. Je kunt hier ook een alternatief datumpatroon invullen. Controleer de uitkomst in Databron, zeker bij verschillen in Excel-taalinstelling.
@@ -110,6 +110,18 @@ in
 ```
 
 Vervang *csv_projecten* door de naam van jouw benoemde bereik en kies het scheidingsteken dat binnen de CSV gebruikt wordt.
+
+Voor JSON bestanden dien je **LoadJSON** te gebruiken. Bij een lege query kun je direct dit complete voorbeeld in de Geavanceerde editor plakken:
+
+```PowerQueryM
+// Laden van JSON
+let
+  Bronbestand = Text.From(Excel.CurrentWorkbook(){[Name="json_projecten"]}[Content]{0}[Column1]),
+  Bron = LoadJSON(Bronbestand),
+in
+  #"Bron"
+```
+
 Voor Excel bestanden dien je **LoadXLS** te gebruiken en de naam van het werkblad of een Excel-tabel aan te geven. Bij een lege query kun je direct dit complete voorbeeld in de Geavanceerde editor plakken:
 
 ```PowerQueryM
