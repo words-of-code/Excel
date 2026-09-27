@@ -23,8 +23,7 @@ Deze naam gebruik je ook voor het benoemde bereik[^1] in de **kolom B (Bestandsl
 
 *Controleer dat het pad naar een bestaande map verwijst en dat de scheiding tussen de map en de bestandsnaam in de uiteindelijke databron klopt.*
 
-> [!NOTE]
-> Een benoemd bereik maken:
+> [!NOTE] Een benoemd bereik maken:
 > Selecteer de cel die benoemd moet worden. Typ de gewenste naam, bijvoorbeeld *csv_projecten*, in het naamvak links van de formulebalk (waar normaal het celadres staat) en druk op Enter. Je kunt dit ook doen via: **Ctrl+F3 → Namen beheren → Nieuw**.
 
 ## Stap 2: Databronnen definiëren
