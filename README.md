@@ -1,6 +1,6 @@
 # Excel
 
-I share my Excel knowledge and custom formulas, providing a LAMBDA alternative whenever practical. I aim to publish all content bilingually in English and Dutch, with foldernames and filenames in English only for simplicity.
+I share my Excel knowledge and custom formulas, providing a LAMBDA option as well whenever practical. I aim to publish all content bilingually in English and Dutch, with foldernames and filenames in English only for simplicity.
 
 ---
 
