@@ -6,41 +6,46 @@ De Power Query functies **LoadCSV** en **LoadXLS** staan al in het Excel-templat
 
 ## Stap 1: Bestandslocaties instellen
 
-In de eerste tabel staan de basislocaties van je gegevensbestanden. Elke locatie heeft een unieke naam die met **pad_** begint. Deze naam kan via de dropdown lijst in stap 2 gekozen worden, zodoende hoef je en wijziging in een locatie slechts op 1 plek bij te werken.
+In de eerste tabel staan de basislocaties van je gegevensbestanden. Elke locatie heeft een unieke naam die met **pad_** begint. Deze naam kan via de dropdown lijst in stap 2 gekozen worden, zodoende kan je een wijziging in een locatie centraal bijwerken.
 
 - **pad_dynamisch**\
   Verwijst naar de locatie van het geopende Excel-bestand. Als het werkboek met de bijbehorende bronbestanden wordt verplaatst, kan het pad daardoor mee veranderen.\
-  Dit pad is alleen zichtbaar nadat het Excel bestand een eerste keer is opgeslagen.
+  *(Dit pad is alleen zichtbaar nadat het Excel bestand een eerste keer is opgeslagen.)*
 
 - **pad_downloads**\
-  Verwijst naar je persoonlijke Downloads-map. Vervang **_username_** in het pad door je eigen Windows-gebruikersnaam, bijv. `C:\Users\Words-of-Code\Downloads\`.
+  Verwijst naar je persoonlijke Downloads-map. Vervang de **gebruikersnaam** in het pad door je eigen Windows-gebruikersnaam, bijv. `C:\Users\Words-of-Code\Downloads\`.
 
 Een extra bestandslocatie toevoegen:
 1.	Gebruik een lege regel in de tabel of, indien nodig, voeg een extra rij toe aan de tabel.
-2.	Geef de locatie in **kolom A (Referentie)** een unieke naam, bijvoorbeeld **pad_projecten**.
-Deze naam gebruik je ook voor het benoemde bereik[^1] in de **kolom B (Bestandslocatie)**.
-3.	Vul in **kolom B (Bestandslocatie)** het pad naar de map in.
+2.	Geef de locatie in **kolom A (ID)** een unieke naam, bijvoorbeeld **pad_projecten**.
+Deze naam gebruik je ook voor het benoemde bereik in de **kolom B (Bestandslocatie)**.
+3.	Vul in **kolom B (Bestandslocatie)** het pad naar de map in. Het pad moet eindigen met `\` of `/` afhankelijk van het type pad (lokaal of netwerk vs online).
 
-*Controleer dat het pad naar een bestaande map verwijst en dat de scheiding tussen de map en de bestandsnaam in de uiteindelijke databron klopt.*
+*Controleer dat het pad naar een bestaande map verwijst en dat de scheiding tussen de map en de bestandsnaam in **kolom J (Databron)** klopt.*
 
 > [!NOTE]
-> Een benoemd bereik maken:\
+> **Een benoemd bereik maken:**\
 > Selecteer de cel die benoemd moet worden. Typ de gewenste naam, bijvoorbeeld *csv_projecten*, in het naamvak links van de formulebalk (waar normaal het celadres staat) en druk op Enter. Je kunt dit ook doen via: **Ctrl+F3 → Namen beheren → Nieuw**.
 
 ## Stap 2: Databronnen definiëren
 
-Maak voor ieder te importeren bestand een regel in de tweede tabel. Vul de kolommen met blauwe koppen in; kolom J (Databron) bouwt het volledige pad met de bestandsnaam op via de =DATA.SOURCE() formule. Het resultaat is meteen een controle op je instellingen.
+Maak voor ieder te importeren bestand een regel in de tweede tabel. Vul de kolommen met blauwe koppen in; **kolom J (Databron)** bouwt het volledige pad met de bestandsnaam op via de `=DATA.SOURCE()` formule. Het resultaat is meteen een controle op je instellingen.
 
 - **Referentie**\
-  Geef de databron een herkenbare naam, bijvoorbeeld csv_projecten. Deze naam gebruik je ook voor het benoemde bereik[^1] in de kolom J (Databron).
+  Geef de databron een herkenbare naam, bijv. *csv_projecten*. Deze naam gebruik je ook voor het benoemde bereik in de **kolom J (Databron)**.
+  
 - **Bestandslocatie**\
-  Selecteer een pad_ naam. Door de koppeling met de eerste tabel hoeft een wijziging van een locatie maar op 1 plek te worden gedaan.
+  Selecteer een **pad_** naam. Door de koppeling met de eerste tabel hoeft een wijziging van een locatie maar op 1 centrale plek te worden gedaan.
+  
 - **Subfolder**\
-  Vul zo nodig de submap in, bijvoorbeeld brondata. Staat het bestand direct in de gekozen map, laat dit veld dan leeg.
+  Vul zo nodig de submap in, bijv. *brondata*. Staat het bestand direct in de gekozen map met het Excel bestand, laat dit veld dan leeg.
+  
 - **Bestandsnaam (basis)**\
-  Vul het vaste deel van de naam in. Voor `projecten-20260926.csv` is dit projecten; datum en extensie komen uit de andere kolommen.
+  Vul het vaste deel van de naam in. Voor *projecten-20260926.csv* is dit *projecten*; de datum (met het streepje ervoor) en de extensie komen uit de andere kolommen.
+  
 - **Bestandsextensie**\
-  Vul de extensie zonder punt in, bijvoorbeeld `csv` of `xslx`. LoadCSV ondersteunt momenteel alleen deze twee typen.
+  Vul de extensie zonder punt in, bijv. *csv* of *xslx*. De template ondersteunt momenteel alleen deze twee typen via LoadCSV en LoadXLS.
+  
 - **Met datum?**\
   Vul WAAR of 1 in om de standaard datumtoevoeging te gebruiken. In de template is het standaardpatroon emmdd (jaar maand dag), zoals in `projecten-20260926.csv`. Je kunt hier ook een alternatief datumpatroon invullen. Controleer de uitkomst in Databron, zeker bij verschillen in Excel-taalinstelling.
   - In het datumpatroon zijn de volgende karakters toegestaan: `d`, `m`, `y`, `j`, `e`, `-`, en ` ` (spatie).
