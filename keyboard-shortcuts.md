@@ -57,3 +57,9 @@
 | **CTRL + H** | vervangen; dezelfde wildcards als bij **CTRL + F** |
 | **ALT + =** | voeg `=SOM(…:…)` toe voor het bereik erboven / ernaast |
 | **Fn + Esc/FnLock** | zet de FnLock aan op het toetsenbord van je laptop zodat de F-toetsen direct te gebruiken zijn |
+
+---
+
+If you enjoy what I do, please consider supporting me. Especially when it solved an issue for you or just saved you time. Thank you!
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H0E727PHE6)
