@@ -148,7 +148,10 @@ in
 
 ## Tot slot
 
-Met de template heb je een gemakkelijke manier om CSV, JSON en XLSX (en XLS en XSLM) bestanden in te laden zonder dat je pad en bestandsnaam hardcoded in de query staan. Vooralsnog hou ik het bij deze 3 bestandsextensies. De eerste uitbreiding zal waarschijnlijk richting het ophalen van data uit een database (bijv. MariaDB of MySQL) zijn, zodra ik daar zelf gebruik van ga maken. 
+Met de template heb je een gemakkelijke manier om CSV, JSON en XLSX (en XLS en XSLM) bestanden in te laden zonder dat je pad en bestandsnaam hardcoded in de query staan. Voorlopig hou ik het bij deze 3 bestandsextensies.
+
+De eerste uitbreiding zal waarschijnlijk richting het ophalen van data uit een database (bijv. MariaDB of MySQL) zijn, zodra ik daar zelf gebruik van ga maken.
+
 Ga in de tussentijd ook vooral zelf aan de slag om het in andere queries toe te passen. En als je een goede oplossing hebt, deel die dan ook vooral met mij.
 
 <!-- [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H0E727PHE6) -->
