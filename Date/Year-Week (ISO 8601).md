@@ -36,7 +36,7 @@ Press **CTRL + F3** to open the **Name Manager**, select **New**, and enter:
 )
 ```
 
-You can then use the function anywhere in your workbook:
+You can then use the function anywhere in the workbook:
 
 ```excel
 =ISO.YEARWEEK(A1)
@@ -80,7 +80,7 @@ Druk op **CTRL + F3** om **Namen beheren** te openen, kies **Nieuw** en voer het
 )
 ```
 
-Je kunt de functie vervolgens overal in je werkmap gebruiken:
+Je kunt de functie vervolgens overal in de werkmap gebruiken:
 
 ```excel
 =ISO.JAARWEEK(A1)
