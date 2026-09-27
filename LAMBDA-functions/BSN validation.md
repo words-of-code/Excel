@@ -1,3 +1,28 @@
+## [EN] Validate Dutch BSN numbers via 'elfproef'
+
+
+
+
+
+```excel
+=LAMBDA(txt;
+LET(
+    bsn; REGEXREPLACE(
+        REGEXEXTRACT(txt; "(?<![0-9])(?:BSN)?[0-9]{8,9}(?![0-9])");
+        "^BSN";
+        ""
+    );
+    n; TEXT(bsn; "000000000");
+    MOD(
+        9*VALUE(MID(n;1;1)) + 8*VALUE(MID(n;2;1)) + 7*VALUE(MID(n;3;1)) +
+        6*VALUE(MID(n;4;1)) + 5*VALUE(MID(n;5;1)) + 4*VALUE(MID(n;6;1)) +
+        3*VALUE(MID(n;7;1)) + 2*VALUE(MID(n;8;1)) - VALUE(MID(n;9;1));
+        11
+    )=0
+) )
+```
+
+
 ## [NL] Valideer BSN nummer via elfproef
 
 BSN nummers zijn te controleren via de elfproef. Met deze proef kan vastgesteld worden of het een geldig nummer is.
