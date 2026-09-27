@@ -172,4 +172,8 @@ In the meantime, feel free to experiment with using the approach in other querie
 
 And if you come up with a useful solution or improvement, please share it with me as well.
 
-<!-- [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H0E727PHE6) -->
+---
+
+If you enjoy what I do, please consider supporting me. Especially when it solved an issue for you or just saved you time. Thank you!
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H0E727PHE6)
