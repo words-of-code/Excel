@@ -61,7 +61,7 @@ Als je deze formule regelmatig gebruikt, kun je er een aangepaste `LAMBDA`-funct
 
 Druk op **CTRL + F3** om **Namen beheren** te openen, kies **Nieuw** en vul het volgende in:
 
-**Naam:** `CLEANTEXT`
+**Naam:** `OPSCHONEN`
 
 **Verwijst naar:**
 
@@ -75,7 +75,7 @@ Druk op **CTRL + F3** om **Namen beheren** te openen, kies **Nieuw** en vul het 
 Daarna kun je de functie overal in de werkmap gebruiken:
 
 ```excel
-=CLEANTEXT(A1)
+=OPSCHONEN(A1)
 ```
 
 ---
