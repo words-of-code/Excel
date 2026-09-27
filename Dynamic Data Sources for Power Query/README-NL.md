@@ -157,4 +157,8 @@ De eerste uitbreiding zal waarschijnlijk richting het ophalen van data uit een o
 
 Ga in de tussentijd ook vooral zelf aan de slag om het in andere queries toe te passen. En als je een goede oplossing hebt, deel die dan ook vooral met mij.
 
-<!-- [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H0E727PHE6) -->
+---
+
+If you enjoy what I do, please consider supporting me. Especially when it solved an issue for you or just saved you time. Thank you!
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H0E727PHE6)
