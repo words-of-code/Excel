@@ -39,16 +39,17 @@ Maak voor ieder te importeren bestand een regel in de tweede tabel. Vul de kolom
   Selecteer een **pad_** naam. Door de koppeling met de eerste tabel hoeft een wijziging van een locatie maar op 1 centrale plek te worden gedaan.
   
 - **Subfolder**\
-  Vul zo nodig de submap in, bijv. *brondata*. Staat het bestand direct in de gekozen map met het Excel bestand, laat dit veld dan leeg.
+  Vul zo nodig de submap in, bijv. *brondata*. Staat het bestand direct in de gekozen map met het Excel bestand, laat dit veld dan leeg.\
+  Als je bijv. alleen in bij locaties op het netwerk de subfolder *brondata* gebruikt, dan kan je dit ook eenvoudig regelen via een formule als deze: `=ALS.FOUT(ALS(REGEXTEST(INDIRECT([@Bestandslocatie]); "://"); "brondata"; "");"")`
   
 - **Bestandsnaam (basis)**\
-  Vul het vaste deel van de naam in. Voor *projecten-20260926.csv* is dit *projecten*; de datum (met het streepje ervoor) en de extensie komen uit de andere kolommen.
+  Vul het vaste deel van de naam in. Voor *projecten-20260927.csv* is dit *projecten*; de datum (met het streepje ervoor) en de extensie komen uit de andere kolommen.
   
 - **Bestandsextensie**\
   Vul de extensie zonder punt in, bijv. *csv* of *xslx*. De template ondersteunt momenteel alleen deze twee bestandsextensies via LoadCSV en LoadXLS.
   
 - **Met datum?**\
-  Vul WAAR of 1 in om de standaard datumtoevoeging te gebruiken. In de template is het standaardpatroon `emmdd` (jaar maand dag), zoals in `projecten-20260926.csv`. Je kunt hier ook een alternatief datumpatroon invullen. Controleer de uitkomst in Databron, zeker bij verschillen in Excel-taalinstelling.
+  Vul WAAR of 1 in om de standaard datumtoevoeging te gebruiken. In de template is het standaardpatroon `emmdd` (jaar maand dag), zoals in `projecten-20260927.csv`. Je kunt hier ook een alternatief datumpatroon invullen. Controleer de uitkomst in Databron, zeker bij verschillen in Excel-taalinstelling.
   - In het datumpatroon zijn de volgende karakters toegestaan: `d`, `m`, `y`, `j`, `e`, `-`, en ` ` (spatie).
   - Het karakter `e` is de weergavetaal onafhankelijke variant voor jaar (bijv. `jjjj` of `yyyy`).
   - De voorloopnul bij dag en maand krijg je door respectievelijk `dd` en `mm` te gebruiken.
@@ -75,7 +76,7 @@ Maak voor ieder te importeren bestand een regel in de tweede tabel. Vul de kolom
 | Extensie | csv |
 | Met datum? | = WAAR |
 
-resulteert bijv. in: `https://organisatienaam.sharepoint.com/personal/_username_/Documents/Desktop/brondata/projecten-20260926.csv`
+resulteert bijv. in: `https://organisatienaam.sharepoint.com/personal/_username_/Documents/Desktop/brondata/projecten-20260927.csv`
 
 De URL hierboven is alleen een voorbeeld. De waarde in jouw **kolom J (Databron)** moet verwijzen naar het bestand dat je daadwerkelijk kunt openen.
 
