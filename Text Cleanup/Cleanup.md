@@ -42,12 +42,12 @@ Open met `CTRL + F3` het 'Namen beheren' venster en klik op Nieuw. Naam: OPSCHON
 ```
 
 ### Wat doen de verschillende delen van de formule?
-- SPATIES.WISSEN: spaties aan weerzijden verwijderen
+- SPATIES.WISSEN: spaties aan weerzijden verwijderen en meerdere spaties direct achter elkaar vervangen door een enkele spatie
 - WISSEN.CONTROL: verwijder onzichtbare tekens (0 - 31), denk hierbij aan tekens als:
-  - TEKEN(9) (tab)
-  - TEKEN(10) (Line Feed / LF ofwel regeleinde)
-  - TEKEN(13) (Carriage Return / CR ofwel harde return)
-- SUBSTITUEREN TEKEN(160) (Non-Breaking Space / NBSP ofwel vast spatie) door niets
+  - TEKEN(9): tab
+  - TEKEN(10): Line Feed (LF) ofwel regeleinde
+  - TEKEN(13): Carriage Return (CR) ofwel harde return
+- SUBSTITUEREN TEKEN(160): Non-Breaking Space (NBSP) ofwel vast spatie vervangen door niets
 
 ---
 
