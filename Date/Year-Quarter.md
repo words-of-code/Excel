@@ -35,7 +35,7 @@ Press **CTRL + F3** to open the **Name Manager**, select **New**, and enter:
 )
 ```
 
-You can then use the function anywhere in your workbook:
+You can then use the function anywhere in the workbook:
 
 ```excel
 =YEAR.Q(A1)
