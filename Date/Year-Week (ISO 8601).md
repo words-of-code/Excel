@@ -47,7 +47,7 @@ You can then use the function anywhere in your workbook:
 Excel heeft een ingebouwde functie om het ISO 8601-weeknummer te bepalen, maar heeft geen functie om het bijbehorende ISO 8601-jaar te retourneren. Hieronder staat een eenvoudige oplossing voor dit probleem.
 
 > [!NOTE]
-> [Wikipedia: ISO 8601, Weeknummering]([https://nl.wikipedia.org/wiki/ISO_8601#Weeknummering](https://nl.wikipedia.org/wiki/Weeknummer)
+> [Wikipedia: ISO 8601, Weeknummering](https://nl.wikipedia.org/wiki/Weeknummer)
 
 Om het ISO-jaar en weeknummer te retourneren in het formaat `2026-W53`:
 
