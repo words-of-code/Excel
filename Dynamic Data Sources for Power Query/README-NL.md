@@ -109,15 +109,28 @@ in
 ```
 
 Vervang *csv_projecten* door de naam van jouw benoemde bereik en kies het scheidingsteken dat binnen de CSV gebruikt wordt.
-Voor Excel bestanden dien je **LoadXLS** te gebruiken en de naam van het werkblad aan te geven. Bij een lege query kun je direct dit complete voorbeeld in de Geavanceerde editor plakken:
+Voor Excel bestanden dien je **LoadXLS** te gebruiken en de naam van het werkblad of een Excel-tabel aan te geven. Bij een lege query kun je direct dit complete voorbeeld in de Geavanceerde editor plakken:
 
 ```PowerQueryM
+// Laden van een werkblad
 let
-   Bronbestand = Text.From(Excel.CurrentWorkbook(){[Name="xls_projecten"]}[Content]{0}[Column1]),
-   Bron = LoadXLS(Bronbestand),
-   #"Werkbladnaam" = Bron{[Item="NaamWerkblad",Kind="Sheet"]}[Data]
+  Bronbestand = Text.From(Excel.CurrentWorkbook(){[Name="xls_projecten"]}[Content]{0}[Column1]),
+  Bron = LoadXLS(Bronbestand),
+  #"Data" = Bron{[Item="NaamWerkblad",Kind="Sheet"]}[Data]
 in
-     #"Werkbladnaam"
+  #"Data"
+```
+
+en
+
+```PowerQueryM
+// Laden van een Excel-tabel
+let
+  Bronbestand = Text.From(Excel.CurrentWorkbook(){[Name="xls_projecten"]}[Content]{0}[Column1]),
+  Bron = LoadXLS(Bronbestand),
+  #"Data" = Bron{[Item="NaamTabel",Kind="Table"]}[Data]
+in
+  #"Data"
 ```
 
 ## Tot slot
