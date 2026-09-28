@@ -58,7 +58,7 @@ This LAMBDA leaves the other words in the address exactly as they were. The fina
 )(A1)
 ```
 
-`Keukenhof 1, 2161 an Lisse` becomes `Keukenhof 1, 2161AN Lisse`. If no postcode is found, the formula returns `#N/A`. To keep unmatched addresses unchanged, wrap the *entire* formula in `IFNA( ... , A1)`.
+`Keukenhof 1, 2161 an Lisse` becomes `Keukenhof 1, 2161AN Lisse`. If no postcode is found, the formula returns `#N/A`. To keep unmatched addresses unchanged, wrap the *entire* formula in `IFNA( ... ; A1)`.
 
 > [!NOTE]
 > **More tolerance for messy data:** The examples use `[ ]?`, which allows **zero or one ordinary space**. If postcodes can contain several ordinary spaces between the digits and letters, replace `[ ]?` with `[ ]*` in the relevant regex. The latter allows **zero or more ordinary spaces**. This does not add support for tabs or nonbreaking spaces.
