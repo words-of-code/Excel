@@ -60,6 +60,7 @@ This LAMBDA leaves the other words in the address exactly as they were. The fina
 
 `Keukenhof 1, 2161 an Lisse` becomes `Keukenhof 1, 2161AN Lisse`. If no postcode is found, the formula returns `#N/A`. To keep unmatched addresses unchanged, wrap the *entire* formula in `IFNA( ... , A1)`.
 
+> [!NOTE]
 > **More tolerance for messy data:** The examples use `[ ]?`, which allows **zero or one ordinary space**. If postcodes can contain several ordinary spaces between the digits and letters, replace `[ ]?` with `[ ]*` in the relevant regex. The latter allows **zero or more ordinary spaces**. This does not add support for tabs or nonbreaking spaces.
 
 ### Pattern at a glance
@@ -139,6 +140,7 @@ Deze LAMBDA laat de andere woorden in het adres precies zoals ze waren. De afslu
 
 `Keukenhof 1, 2161 an Lisse` wordt `Keukenhof 1, 2161AN Lisse`. Als er geen postcode wordt gevonden, geeft de formule `#N/B` terug. Wil je adressen zonder postcode ongewijzigd laten, zet dan `ALS.NB( ... ;A1)` om de *volledige* formule.
 
+> [!NOTE]
 > **Meer tolerantie voor rommelige gegevens:** De voorbeelden gebruiken `[ ]?`: dit staat **nul of één gewone spatie** toe. Kunnen er meerdere gewone spaties tussen de cijfers en letters staan, vervang dan `[ ]?` door `[ ]*` in de betreffende regex. Daarmee zijn **nul of meer gewone spaties** toegestaan. Tabs en vaste spaties worden daardoor niet alsnog geaccepteerd.
 
 ### Het patroon in het kort
