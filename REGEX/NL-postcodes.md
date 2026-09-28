@@ -153,3 +153,8 @@ Deze LAMBDA laat de andere woorden in het adres precies zoals ze waren. De afslu
 | `[A-Z]{2}` | Precies twee letters, bij hoofdletterongevoelig zoeken via het functieargument |
 | `$1`, `$2` | Hergebruik vastgelegde groepen in `REGEXVERVANGEN` |
 
+---
+
+If you enjoy what I do, please consider supporting me. Especially when it solved an issue for you or just saved you time. Thank you!
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H0E727PHE6)
