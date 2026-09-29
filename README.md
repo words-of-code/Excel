@@ -3,6 +3,7 @@
 I share my Excel knowledge and custom formulas, providing a LAMBDA option as well whenever practical. I aim to publish all content bilingually in English and Dutch, with foldernames and filenames in English only for simplicity.
 
 All content is provided as-is without warranties of any kind. Solutions are tested on a **Dutch-locale** setup (separators: formula `;` | decimal `,` | thousands `.`) and may need adjustment for other versions/locales.
+
 ---
 
 If you enjoy what I do, please consider supporting me. Especially when it solved an issue for you or just saved you time. Thank you!
