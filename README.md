@@ -2,7 +2,7 @@
 
 I share my Excel knowledge and custom formulas, providing a LAMBDA option as well whenever practical. I aim to publish all content bilingually in English and Dutch, with foldernames and filenames in English only for simplicity.
 
-All content is provided as-is without warranties of any kind. Solutions are tested on a Dutch-locale, `;`-separator (with decimalseparator `,` and thousandseparator `.`) setup and may need adjustment for other versions/locales. Use at your own risk; the author accepts no liability.
+All content is provided as-is without warranties of any kind. Solutions are tested on a Dutch-locale setup (`;`-formulaseparator | decimalseparator `,` | thousandseparator `.`) and may need adjustment for other versions/locales. Use at your own risk; the author accepts no liability.
 
 ---
 
