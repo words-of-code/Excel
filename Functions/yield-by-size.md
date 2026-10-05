@@ -8,7 +8,7 @@ Documentation will follow.
 ```excel
 =LAMBDA(bottles; shares; [full_size_ml];
   LET(
-    size; IF(ISOMITTED(full_size_ml); 700; full_size_ml);
+    size; OR( ISOMITTED(full_size_ml); TRIM(full_size_ml)=""; full_size_ml=0 );
     IF(
       OR(
         AND( size<>700; size<>500 );
