@@ -549,7 +549,7 @@ De functie kan de volgende foutmeldingen retourneren:
     LET(
         pc; HOOFDLETTERS( SUBSTITUEREN( SPATIES.WISSEN( postcode & "" );" ";"" ));
         hn; HOOFDLETTERS( SPATIES.WISSEN( huisnummer & "" ));
-        tv; REGEXVERVANGEN( HOOFDLETTERS( SPATIES.WISSEN( toevoeging & "" )); "[ -]"; "" );
+        tv; REGEXVERVANGEN( HOOFDLETTERS( SPATIES.WISSEN( toevoeging & "" )); "[ -/]"; "" );
 
         pc_geldig; ALS.FOUT(
             REGEXTEST( pc; "^[1-9][0-9]{3}(?!SA|SD|SS)[A-Z]{2}$"; 1 );
@@ -557,7 +557,7 @@ De functie kan de volgende foutmeldingen retourneren:
         );
 
         hn_geldig; ALS.FOUT(
-            REGEXTEST( hn; "^[0-9]{1,5}(?:[ -]?[A-Z0-9][A-Z0-9 -]*)?$"; 1 );
+            REGEXTEST( hn; "^[0-9]{1,5}(?:[ -/]?[A-Z0-9][A-Z0-9 -/]*)?$"; 1 );
             ONWAAR
         );
 
@@ -568,7 +568,7 @@ De functie kan de volgende foutmeldingen retourneren:
             ALS.FOUT(
                 REGEXVERVANGEN(
                     REGEXVERVANGEN( hn; "^[0-9]{1,5}"; "" );
-                    "[ -]";
+                    "[ -/]";
                     ""
                 );
                 ""
