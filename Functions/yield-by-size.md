@@ -2,13 +2,18 @@
 
 Documentation will follow.
 
-`YIELDBYSIZE(bottles; shares; [full_size_ml]`
-
-
 ```excel
 =LAMBDA(bottles; shares; [full_size_ml];
   LET(
-    size; IF( OR( ISOMITTED(full_size_ml); TRIM(full_size_ml)=""; full_size_ml=0 ); 700; full_size_ml );
+    size; IF(
+            OR(
+              ISOMITTED(full_size_ml);
+              TRIM(full_size_ml)="";
+              full_size_ml=0
+            );
+            700;
+            full_size_ml
+          );
     IF(
       OR(
         AND( size<>700; size<>500 );
@@ -38,3 +43,5 @@ Documentation will follow.
   )
 )
 ```
+
+Usage: `=YIELDBYSIZE(bottles; shares; [full_size_ml])`
